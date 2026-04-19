@@ -1,0 +1,1 @@
+GRAZOX DevOps Lab Initialized on AWS EC2.
