@@ -1,0 +1,10 @@
+Session Summary:
+
+- Completed Git basics and branching workflow
+- Created feature/day3-notes branch
+- Practiced staging, committing, and history visualization
+- Learned git log graph and divergence concept
+
+Next step:
+- Merge feature branch into main
+- Learn pull request workflow (GitHub)
