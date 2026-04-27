@@ -4,3 +4,4 @@ Day 2 — Git Remote Sync
 - Successfully authenticated GitHub
 - Performed first git push
 - Established upstream tracking (origin/main)
+- Working on feature branch: day3-notes
