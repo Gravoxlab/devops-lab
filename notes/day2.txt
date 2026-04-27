@@ -1,0 +1,6 @@
+Day 2 — Git Remote Sync
+
+- Created new GitHub Personal Access Token
+- Successfully authenticated GitHub
+- Performed first git push
+- Established upstream tracking (origin/main)
