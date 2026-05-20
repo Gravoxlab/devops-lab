@@ -1,0 +1,27 @@
+name: Docker Compose Check
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-compose:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build containers
+        run: docker compose up -d --build
+
+      - name: Wait for services
+        run: sleep 15
+
+      - name: Test app
+        run: curl http://localhost:8080
+
+      - name: Shut down containers
+        run: docker compose down
+
