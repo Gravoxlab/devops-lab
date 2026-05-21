@@ -22,7 +22,7 @@ def home():
 
         connection.close()
 
-        return "Flask Connected To Database"
+        return "CI/CD Auto Deploy Working"
 
     except Exception as e:
         return f"Database connection failed: {e}"
