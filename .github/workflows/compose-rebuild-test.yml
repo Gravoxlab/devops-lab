@@ -19,16 +19,21 @@ jobs:
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
-          username: ubuntu
+          username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
+          script_stop: true
+          timeout: 60s
+          command_timeout: 20m
           script: |
+            echo "Connected to EC2"
+
             cd /home/ubuntu/devops-lab
 
             git pull origin main
 
             cd compose-rebuild-test
 
-            docker compose down
+            docker compose down || true
             docker compose up --build -d
 
-            docker ps 
+            docker ps
