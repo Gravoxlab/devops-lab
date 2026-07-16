@@ -1,59 +1,52 @@
-# DevOps Engineering Portfolio
+Current Learning Direction
 
-## Overview
-This repository contains structured hands-on DevOps engineering labs covering containerization, orchestration, networking, databases, and backend deployment.
+Gravoxlab is an engineering lab focused on developing practical skills in Cloud Engineering, DevOps, Platform Engineering, and production systems.
 
----
+Completed Foundations
 
-## Labs Completed
-
-### Docker Basics
-- Container creation and image building
-- Port mapping and runtime debugging
-
-### Docker Compose
-- Multi-container orchestration
-- Service networking and scaling
-
-### Reverse Proxy (Nginx)
-- Traffic routing to multiple services
-- Path-based routing (/app1, /app2, /app3)
-
-### PostgreSQL Containerization
-- Database deployment using Docker
-- Persistent volumes
-- SQL execution inside containers
-
-### Flask + PostgreSQL Integration
-- Backend API containerization
-- Database connectivity using Docker networks
-- Compose-based full-stack deployment
-
----
-
-## Tech Stack
+- Linux
+- Git & GitHub
 - Docker
 - Docker Compose
-- Nginx
-- PostgreSQL
-- Flask (Python)
-- Linux (Ubuntu)
+- Networking fundamentals
+- Nginx reverse proxy
+- PostgreSQL persistence
+- GitHub Actions CI/CD
+- AWS EC2 deployments
 
----
+Production Lab
 
-## Learning Progression
+Architecture:
 
-Docker → Compose → Networking → Reverse Proxy → Database → Full-stack containers
+Internet
+    │
+    ▼
+ AWS EC2
+    │
+Docker Compose
+    │
+ Nginx
+    │
+ Flask
+    │
+PostgreSQL
 
----
+Automated deployment pipeline:
 
-## How to Run Any Lab
+GitHub Push → GitHub Actions → SSH → Docker Compose Rebuild → Production Deployment
 
-Each lab contains its own README with instructions.
-Navigate into the lab folder and follow steps.
+Current Focus
 
----
+The next phase is no longer tutorial completion.
 
-## Author
- GRAVOX 
+Gravoxlab is focused on:
 
+- Engineering reasoning
+- Failure analysis
+- Production debugging
+- Infrastructure mental models
+- Real-world labs
+- Architecture deep dives
+- Hands-on troubleshooting
+
+The goal is to understand systems deeply enough to build, debug, and operate them with confidence.
